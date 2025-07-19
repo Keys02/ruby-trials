@@ -1,4 +1,4 @@
-# A program which prompts the user to enter their interest and then it adds it to a list
+# A program which prompts the user to enter their interest and then it adds it to a list and then prints to the screen
 
 interests = [];
 
@@ -6,20 +6,20 @@ interests = [];
   print "input> "
   user_interest = gets.chomp;
 
-  if user_interest != "q"
+  if user_interest.downcase != "q" && user_interest.downcase != "quit"
     interests.push(user_interest)
   end 
 
-while user_interest.downcase != "q" or user_interest.downcase != "quit"
+while user_interest.downcase != "q" && user_interest.downcase != "quit"
     puts "Enter your interest"
     print "input> "
     user_interest = gets.chomp
 
-    if user_interest.downcase != "q" or user_interest.downcase != "quit"
+    if user_interest.downcase != "q" && user_interest.downcase != "quit"
       interests.push(user_interest)
     end
 end
 
-interest_builder = interest.join(", ")
+interest_builder = "\nInterests: [" + interests.join(", ") + "]"
 
 puts interest_builder;
