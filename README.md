@@ -4,7 +4,7 @@ This repository contains my personal progress and experiments as I learn the Rub
 
 ---
 
-## 🛠 Getting Started
+## 🛠️ Getting Started
 
 To run any Ruby file in this repository:
 
