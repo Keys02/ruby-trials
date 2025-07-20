@@ -1,0 +1,46 @@
+# Arithmetic operation methods
+def add(first_num, second_num)
+    first_num + second_num
+end
+
+def subtract(first_num, second_num)
+   first_num - second_num 
+end
+
+def multiply(first_num, second_num)
+    first_num * second_num
+end
+
+def divide(first_num, second_num)
+    first_num / second_num
+end
+
+# Main calculator controller method
+def calculator_controller()
+  puts "Enter the first number"
+  print "input> "
+  first_num = gets.chomp.to_f
+
+  puts "Enter the second number"
+  print "input> "
+  second_num = gets.chomp.to_f
+
+  puts "What operation would you like to perform"
+  puts "+) Addition"
+  puts "-) Subtraction"
+  puts "*) Multiply"
+  puts "/) Division"
+
+  print "input> "
+  operation = gets.chomp
+
+  if (operation == "+")
+    puts " Result: #{add(first_num, second_num)}"
+  elsif (operation == "-")
+    puts " Result: #{subtract(first_num, second_num)}"
+  elsif (operation == "*")
+    puts " Result: #{multiply(first_num, second_num)}"
+  else 
+    puts " Result: #{divide(first_num, second_num)}"
+  end
+end
