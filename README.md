@@ -13,4 +13,4 @@ ruby filename.rb
 ```
 
 ### Credit
-[David Heinemeier Hansson (DHH)](ttps://x.com/dhh)
+[David Heinemeier Hansson (DHH)](https://x.com/dhh)
