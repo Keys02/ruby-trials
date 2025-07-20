@@ -35,7 +35,7 @@ def calculator_controller()
       break
     end
 
-    if !command_operations.includes?(command_operation)
+    if !command_operations.include?(command_operation)
       puts "I don't understand that command operation"
       next
     end
@@ -48,14 +48,18 @@ def calculator_controller()
     print "input> "
     second_num = gets.chomp.to_f
 
-    if (operation == "+")
+    if (command_operation == "+")
       puts " Result: #{add(first_num, second_num)}"
-    elsif (operation == "-")
+      break
+    elsif (command_operation == "-")
       puts " Result: #{subtract(first_num, second_num)}"
-    elsif (operation == "*")
+      break
+    elsif (command_operation == "*")
       puts " Result: #{multiply(first_num, second_num)}"
+      break
     else 
       puts " Result: #{divide(first_num, second_num)}"
+      break
     end
   end
 end
