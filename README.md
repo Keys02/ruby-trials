@@ -10,3 +10,7 @@ To run any Ruby file in this repository:
 
 ```bash
 ruby filename.rb
+```
+
+### Credit
+[David Heinemeier Hansson (DHH)](ttps://x.com/dhh)
