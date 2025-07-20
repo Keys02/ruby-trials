@@ -25,7 +25,12 @@ def calculator_controller(first_num, second_num, operation)
   print "input> "
   second_num = gets.chmod.to_f
 
-  puts "Enter the opeartion you want to perform"
+  puts "What operation would you like to perform"
+  puts "+) Addition"
+  puts "-) Subtraction"
+  puts "*) Multiply"
+  puts "/) Division"
+
   print "input> "
   operation = gets.chmod
 
