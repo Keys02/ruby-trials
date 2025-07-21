@@ -7,14 +7,9 @@ end
 
 def add_new_contact(name, phone)
     contacts = File.open("contacts.txt", "a")
-    contacts.write("\nName: #{name}, Phone: #{phone}")
+    contacts.write("Name: #{name}, Phone: #{phone}\n")
     puts "Contact added successfully"
 end
-
-# def add_to_contacts(name, phone)
-#     contacts = File.open("contacts.txt", "w")
-#     contacts.write("\nName: #{name}, Phone: #{phone}")
-# end
 
 def process_name()
     puts "Enter your name"
