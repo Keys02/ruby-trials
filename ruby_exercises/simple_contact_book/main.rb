@@ -1,3 +1,7 @@
+#--------------------------------------------------
+# This exercise was given to me by ChatGPT
+#--------------------------------------------------
+
 # Contact Book CLI – Ruby File Handling Exercise
 #
 # This exercise is designed to help beginners practice basic file operations in Ruby:
