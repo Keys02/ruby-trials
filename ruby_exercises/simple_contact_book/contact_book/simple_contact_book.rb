@@ -11,21 +11,21 @@ def add_new_contact(name, phone)
     puts "Contact added successfully"
 end
 
-def add_to_contacts(phone)
+def add_to_contacts(name, phone)
     contacts = File.open("contacts.txt", "w")
     contacts.write("\nName: #{name}, Phone: #{phone}")
 end
 
-def name_taker()
+def process_name()
     puts "Enter your name"
-    puts "input>"
+    print "input> "
     name = gets.chomp
     name
 end
 
-def phone_number_taker()
+def process_phone()
     puts "Enter your phone number"
-    puts "input>"
+    print "input> "
     phone_number = gets.chomp
     phone_number
 end
@@ -35,12 +35,21 @@ def welcome_screen()
     puts "What do you want to do"
     puts "1) Display all contacts"
     puts "2) Add new contact"
+    print "input> "
+    option = gets.chomp
+    option.to_i
 end
 
 def run()
-    name = name_taker()
-    phone_number = phone_number_taker()
-    add_new_contact(name, phone_number)
+    option = welcome_screen()
+
+    if (option == 1)
+        get_all_contacts()
+    else
+        name = process_name()
+        phone_number = process_phone()
+        add_new_contact(name, phone_number)
+    end
 end
 
 get_all_contacts()
