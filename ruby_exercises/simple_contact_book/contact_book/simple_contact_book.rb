@@ -11,10 +11,10 @@ def add_new_contact(name, phone)
     puts "Contact added successfully"
 end
 
-def add_to_contacts(name, phone)
-    contacts = File.open("contacts.txt", "w")
-    contacts.write("\nName: #{name}, Phone: #{phone}")
-end
+# def add_to_contacts(name, phone)
+#     contacts = File.open("contacts.txt", "w")
+#     contacts.write("\nName: #{name}, Phone: #{phone}")
+# end
 
 def process_name()
     puts "Enter your name"
@@ -51,5 +51,3 @@ def run()
         add_new_contact(name, phone_number)
     end
 end
-
-get_all_contacts()

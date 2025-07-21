@@ -12,3 +12,10 @@
 #
 # This exercise also encourages learning CLI interaction, simple data formatting,
 # and how to persist data using text files.
+import_relative "simple_contact_book.rb"
+
+def main()
+    run()
+end
+
+main()
