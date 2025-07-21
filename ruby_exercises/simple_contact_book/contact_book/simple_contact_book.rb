@@ -30,6 +30,7 @@ end
 def welcome_screen()
     puts "Welcome to the contact_book"  
     puts "What do you want to do"
+    puts "0) Exit"
     puts "1) Display all contacts"
     puts "2) Add new contact"
     print "input> "
@@ -38,15 +39,21 @@ def welcome_screen()
 end
 
 def run()
-    option = welcome_screen()
-
-    if option == 1
-        get_all_contacts()
-    elseif option = 2
-        name = process_name()
-        phone_number = process_phone()
-        add_new_contact(name, phone_number)
-    else
-        puts "Invalid option selected"
+    loop do
+        print "\n"
+        option = welcome_screen()
+        case option
+            when 0 then 
+                puts "Exiting..."
+                break
+            when 1 then get_all_contacts
+            when 2
+                name = process_name()
+                phone_number = process_phone()
+                add_new_contact(name, phone_number)
+            else
+                puts "Exiting..."
+                break
+        end
     end
 end
