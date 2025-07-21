@@ -1,14 +1,16 @@
 def get_all_contacts
     contacts = File.open("contacts.txt", "r")
-    contacts.readlines.each_with_index do |line, contact|
+    contacts.readlines.each do |line, contact|
        puts line
     end
+    contacts.close
 end
 
 def add_new_contact(name, phone)
     contacts = File.open("contacts.txt", "a")
     contacts.write("Name: #{name}, Phone: #{phone}\n")
     puts "Contact added successfully"
+    contacts.close
 end
 
 def process_name()
@@ -38,11 +40,13 @@ end
 def run()
     option = welcome_screen()
 
-    if (option == 1)
+    if option == 1
         get_all_contacts()
-    else
+    elseif option = 2
         name = process_name()
         phone_number = process_phone()
         add_new_contact(name, phone_number)
+    else
+        puts "Invalid option selected"
     end
 end
