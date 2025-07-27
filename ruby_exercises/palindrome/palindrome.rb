@@ -10,3 +10,5 @@ def palindrome(word)
 end
 
 palindrome("Hannah")
+palindrome("Master")
+palindrome("Racecar")
