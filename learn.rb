@@ -1,0 +1,5 @@
+# puts "Chris".center(50)
+# puts "Keys".center(40)
+puts "A lion, a lion has a tail".center(50)
+puts "It has a big head".center(50)
+puts "And a very small waist".center(50)
