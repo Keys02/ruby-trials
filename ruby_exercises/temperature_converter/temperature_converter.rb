@@ -6,7 +6,7 @@ while true
     unit = gets.chomp
     
     if unit.downcase == "exit"
-      puts "Goodbye!!👋🏽"
+      puts "Goodbye!!🙋🏽"
       break
     end
 
