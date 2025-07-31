@@ -5,7 +5,7 @@ while true
     print "input> "
     unit = gets.chomp
     
-    if unit.downcase == "exit"
+        if unit.downcase == "exit" || unit.downcase == "quit" || unit.downcase == "q"
       puts "Goodbye!!🙋🏽"
       break
     end
