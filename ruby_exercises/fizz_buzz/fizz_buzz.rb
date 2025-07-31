@@ -4,6 +4,6 @@
     elsif(i % 2 == 0)
       puts "#{i} - Fizz"
     else
-      "#{i} - Buzz"
+      puts "#{i} - Buzz"
     end
 end
