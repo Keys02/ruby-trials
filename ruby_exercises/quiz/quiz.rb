@@ -21,19 +21,22 @@ def quizMe
   
   questions.each do |question|
     puts question['question']
-    puts question['options'][0]
-    puts question['options'][1]
-    puts question['options'][2]
-    puts question['options'][3]
-    print "input> "
+    question['options'].each do |option|
+      puts option
+    end
+    print "answer> "
+
     answer = gets().chomp
 
     if answer.upcase == question['answer']
-       userScore += 1
+      userScore += 1
+      puts "Correct! 🎉"
+    else
+      puts "Incorrect. The correct answer was #{question['answer']} 😟"
     end
 
   end 
-    puts "Your score: #{userScore}"
+    puts "Quiz complete! You score #{userScore} out of #{questions.length}. 👏🏽"
 end
 
 quizMe()
