@@ -16,6 +16,11 @@ def quizMe
       "question" => "What is the largest ocean in the world",
       "options" => ["A) Atlantic Ocean", "B) Jupiter", "C) Venus", "D) Mercury"],
       "answer" => "A"
+    },
+    {
+      "question" => "What is the full meaning of HTML",
+      "options" => ["A) Hyper The Text Main Language", "B) HyperText Markup Language", "C) Hyper Text Markup Language", "D) Hype Text Markup Language"],
+      "answer" => "B"
     }
   ]
   
