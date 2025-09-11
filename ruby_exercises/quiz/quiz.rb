@@ -19,8 +19,9 @@ def quizMe
     }
   ]
   
-  questions.each do |question|
+  questions.each_with_index do |question, index|
     puts question['question']
+
     question['options'].each do |option|
       puts option
     end
@@ -31,8 +32,10 @@ def quizMe
     if answer.upcase == question['answer']
       userScore += 1
       puts "Correct! 🎉"
+      puts "" 
     else
       puts "Incorrect. The correct answer was #{question['answer']} 😟"
+      puts ""
     end
 
   end 
