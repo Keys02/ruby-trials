@@ -32,11 +32,10 @@ def quizMe
     if answer.upcase == question['answer']
       userScore += 1
       puts "Correct! 🎉"
-      puts "" 
     else
       puts "Incorrect. The correct answer was #{question['answer']} 😟"
-      puts ""
     end
+    puts ""
 
   end 
     puts "Quiz complete! You score #{userScore} out of #{questions.length}. 👏🏽"
