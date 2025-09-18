@@ -9,6 +9,11 @@ text_files.each_with_index do |file_name, index|
     "Document#{index.to_i + 1}.txt"
   end
 
-  File.rename(file_name, new_name)
+  if File.exist
+    File.rename(file_name, new_name)
+  else
+    abort("The file cannot exist")
+    exit
+  end
 end
 
