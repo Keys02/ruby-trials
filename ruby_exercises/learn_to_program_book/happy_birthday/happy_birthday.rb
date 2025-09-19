@@ -10,14 +10,17 @@ puts "Which day were you born?"
 print "> "
 day = gets.chomp.to_i
 
-age = 1
+index = 1
 
-while Time.local(year + age, month, day) <= (Time.new)
-  puts "🙂"
+ageCounter = 0
+
+while Time.local(year + index, month, day) <= (Time.new)
   # if the 2002/05/14 was provided as input for the year, month and day the while loop will run 23 times and on the last iteration the increment will still occur so we have to account for that.
-  break if Time.local(year + age, month, day).year === (Time.new).year
+  puts "🙂-#{index}"
 
-  age = age + 1
+  index = index + 1
+
+  ageCounter = ageCounter + 1
 end
 
-puts "You are #{age} years old" 
+puts "You are #{ageCounter} years old" 
