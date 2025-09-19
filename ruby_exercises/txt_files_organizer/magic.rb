@@ -16,4 +16,3 @@ text_files.each_with_index do |file_name, index|
     exit
   end
 end
-
