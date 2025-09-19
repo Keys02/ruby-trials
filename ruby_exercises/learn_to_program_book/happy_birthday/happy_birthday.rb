@@ -10,17 +10,14 @@ puts "Which day were you born?"
 print "> "
 day = gets.chomp.to_i
 
-index = 1
+birth_date = Time.new(year, month, day)
+current_date = Time.new
 
-ageCounter = 0
+age = current_date.year - birth_date.year
 
-while Time.local(year + index, month, day) <= (Time.new)
-  # if the 2002/05/14 was provided as input for the year, month and day the while loop will run 23 times and on the last iteration the increment will still occur so we have to account for that.
-  puts "🙂-#{index}"
-
-  index = index + 1
-
-  ageCounter = ageCounter + 1
+if (birth_date.month > current_date.month) || (birth_date.month == current_date.month && birth_date.day < current_date.day)
+  age -= 1
 end
 
-puts "You are #{ageCounter} years old" 
+puts "You are #{age} year old"
+puts "🙂" * age
