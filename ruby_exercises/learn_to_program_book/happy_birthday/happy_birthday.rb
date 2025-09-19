@@ -6,7 +6,11 @@ puts "Which month were you born?"
 print "> "
 month = gets.chomp.to_i
 
-puts "Which day were you born?"
+puts "Which month were you born?"
+print "> "
+month = gets.chomp.to_i
+
+puts "Which ich were you born?"
 print "> "
 day = gets.chomp.to_i
 
