@@ -14,7 +14,6 @@ class Dice
   def set_showing(num)
     puts num == Integer && num > 0 && num <= 6 ? @number_showing = num : "You are cheating"
   end
-
 end
 
 dice1 = Dice.new
