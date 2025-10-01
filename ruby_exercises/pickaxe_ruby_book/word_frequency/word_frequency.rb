@@ -2,7 +2,9 @@ def words_from_string(string)
   string.downcase.scan(/[\w']+/)
 end
 
-words = words_from_string("The problem breaks down into two parts. First, given some text as a string, return a list of words. That sounds like an array. Then, build a count for each distinct word. That sounds like a use for a hash---we can index it with the word and use the corresponding entry to keep a count.")
+text  = "The problem breaks down into two parts. First, given some text as a string, return a list of words. That sounds like an array. Then, build a count for each distinct word. That sounds like a use for a hash---we can index it with the word and use the corresponding entry to keep a count."
+
+words = words_from_string(text)
 
 # =====================================================================================
 # Problem
@@ -36,3 +38,10 @@ puts
 puts "Solution 2"
 decreasing_order_sort_count = count_frequency(words).sort_by {|word, count| count}.reverse.to_h
 p decreasing_order_sort_count
+
+# Solution 3
+sorted_tallied_list = words_from_string(text).tally.sort_by {|word, count| count}.reverse.tap {|result| puts "Reverse from highest to lowest: #{result}"}
+sorted_tallied_list
+# puts
+# puts "Solution 3"
+# puts sorted_tallied_list
