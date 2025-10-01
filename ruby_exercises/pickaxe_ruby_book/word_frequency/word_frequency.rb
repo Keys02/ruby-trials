@@ -2,7 +2,7 @@ def words_from_string(string)
   string.downcase.scan(/[\w']+/)
 end
 
-words = words_from_string("The quick brown fox jumped over the lazy dog")
+words = words_from_string("The problem breaks down into two parts. First, given some text as a string, return a list of words. That sounds like an array. Then, build a count for each distinct word. That sounds like a use for a hash---we can index it with the word and use the corresponding entry to keep a count.")
 
 counts = {}
 # =====================================================================================
@@ -25,9 +25,7 @@ p counts
 # Solution 2
 def count_frequency(word_list)
   counts = Hash.new(0)
-  word_list.each do |word|
-    counts[word] += 1
-  end
+  word_list.each {|word| counts[word] += 1}
   counts
 end
 
