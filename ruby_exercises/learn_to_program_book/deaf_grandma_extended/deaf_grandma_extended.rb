@@ -5,13 +5,13 @@ while true
   something = gets.chomp
 
   if something == "BYE"
-    count = count + 1
+    count += 1
     if count == 3
       break
     end
   elsif something == something.upcase
     puts "NO, NOT SINCE #{rand(1930..1950)}"
-  else 
+  else
     puts "HUH?! SPEAK UP, SONNY"
   end
 end
