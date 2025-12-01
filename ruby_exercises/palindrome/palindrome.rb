@@ -4,6 +4,6 @@ def palindrome(word)
   puts (lcase_word == reversed_word) ? "#{word} is a palindrome" : "#{word} is not a palindrome" 
 end
 
-palindrome("Hannah")
-palindrome("Master")
-palindrome("Racecar")
+palindrome('Hannah')
+palindrome('Master')
+palindrome('Racecar')
