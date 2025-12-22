@@ -21,6 +21,16 @@ def quizMe
       'question' => 'What is the full meaning of HTML',
       'options' => ['A) Hyper The Text Main Language', 'B) HyperText Markup Language', 'C) Hyper Text Markup Language', 'D) Hype Text Markup Language'],
       'answer' => 'B'
+    },
+    {
+      'question' => 'Who is the creator of Ruby on Rails',
+      'options' => ['A) David Heinemeier Hansson', 'B) ThePrimeagen', 'C) Mitchell Hashimoto', 'D) Christopher Powers'],
+      'answer' => 'A'
+    },
+    {
+      'question' => 'Which one of these Linux distro is notoriously difficult to install',
+      'options' => ['A) Ubuntu', 'B) ZorinOS', 'C) NixOS', 'D) Arch Linux'],
+      'answer' => 'D'
     }
   ]
   
