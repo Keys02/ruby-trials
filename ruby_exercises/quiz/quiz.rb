@@ -14,7 +14,7 @@ def quizMe
     },
     {
       'question' => 'What is the largest ocean in the world',
-      'options' => ['A) Atlantic Ocean', 'B) Jupiter', 'C) Venus', 'D) Mercury'],
+      'options' => ['A) Atlantic Ocean', 'B) Pacific Ocean', 'C) Indian Ocean', 'D) Gulf of Guinea'],
       'answer' => 'A'
     },
     {
