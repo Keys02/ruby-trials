@@ -5,5 +5,6 @@ def palindrome(word)
 end
 
 palindrome('Hannah')
+palindrome('Ana')
 palindrome('Master')
 palindrome('Racecar')

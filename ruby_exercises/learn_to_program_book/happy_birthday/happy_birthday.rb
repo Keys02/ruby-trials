@@ -6,11 +6,7 @@ puts "Which month were you born?"
 print "> "
 month = gets.chomp.to_i
 
-puts "Which month were you born?"
-print "> "
-month = gets.chomp.to_i
-
-puts "Which ich were you born?"
+puts "Which day were you born?"
 print "> "
 day = gets.chomp.to_i
 
@@ -23,5 +19,5 @@ if (birth_date.month > current_date.month) || (birth_date.month == current_date.
   age -= 1
 end
 
-puts "You are #{age} year old"
+puts "You are #{age} years old"
 puts "🙂" * age
