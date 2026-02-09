@@ -1,2 +1,10 @@
-animals = ['ant', 'bee', 'cat', 'dog']
-animals.each { |animal| print animal } # passing the block { |animal| print animal } to the method each
+family_name = 'Owusu'
+my_name = 'Chris'
+
+my_name = family_name
+puts "First my name: #{my_name}"
+family_name = 'Agyemang'
+
+puts "Family name: #{family_name}"
+puts "My name: #{my_name}"
+
