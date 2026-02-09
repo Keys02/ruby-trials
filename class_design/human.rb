@@ -15,15 +15,17 @@ class Human
     dance()
   end
 
-  private
-  def dance()
+  private def dance()
     puts "#{@name} is dancing alongside the song"
   end
 
 end
 
 chris = Human.new('Chris', 23)
-chris.sing_and_dance("Happier than ever", "Billie Eilish")
+chris.sing_and_dance('Happier than ever', 'Billie Eilish')
 
 brida = Human.new('Brida', 25.99999999999999)
-brida.sing_and_dance("Another Love", "Tom Odell")
+brida.sing_and_dance('Another love', 'Tom Odell')
+
+david = Human.new('David', 30.882382812)
+david.sing('Fairy tale of New York', 'The Longest John')
